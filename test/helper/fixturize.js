@@ -6,14 +6,14 @@
  *
  * 2. to write to the current document.body, call it like so:
  *
- *      dom.write('<template>', [{ templateVar : value },] callbackFn);
+ *      fixturize.write('<template>', [{ templateVar : value },] callbackFn);
  *
  * The inclusion of the templateVar object is optional, supporting passing variables into the template via standard Handlebars conventions.
  *
  * 3. if you just want to return the template in memory without writing to the
  * dom, use the create method instead:
  *
- *      dom.create('<template>', function(templateAsDomElements) {
+ *      fixturize.create('<template>', function(templateAsDomElements) {
  *          var myElement = $('myElement', templateAsDomElements);
  *      });
  */
